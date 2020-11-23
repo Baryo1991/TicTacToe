@@ -1,0 +1,23 @@
+{
+  "name": "tictactoe-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon ./server/index.js",
+    "client": "npm start --prefix ./client",
+    "debug": "ndb ./server/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6",
+    "socket.io": "^3.0.3"
+  },
+  "devDependencies": {
+    "ndb": "^1.1.5"
+  }
+}

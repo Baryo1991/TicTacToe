@@ -1,0 +1,25 @@
+.game-screen {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+}
+
+.game-screen .cells {
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: flex-start;
+    gap: 2px;
+    margin-top: 10px;
+}
+
+.game-screen .players-content {
+    border: 1px dashed #666;
+    width: 250px;
+    min-width: 220px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}

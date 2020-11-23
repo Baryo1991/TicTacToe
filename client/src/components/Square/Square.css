@@ -1,0 +1,104 @@
+.btn-container {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    width: 90px;
+    align-items: center;
+    height: 90px;
+    font-size: 4rem;
+}
+
+.btn-container button {
+    outline: none;
+    cursor: pointer;
+    background-color: #fff;
+    color: black;
+    border: none;
+    height: 100%;
+    width: 100%;
+    transition: all 1.5s;
+    font-size: inherit;
+    
+}
+
+/* X Class */
+.btn-container button.X {
+    position: relative;
+    height: 100%;
+    animation: rotateY 0.8s forwards
+    
+}
+
+.btn-container button.X::before,
+.btn-container button.X::after {
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 6px;
+    height: 100%;
+    top: 0%;
+    left: 50%;
+}
+
+.btn-container button.X::before {
+    transform: rotateZ(45deg);
+}
+
+.btn-container button.X::after {
+    transform: rotateZ(-45deg);
+}
+
+/* O Class */
+.btn-container button.O {
+    position: relative;
+    height: 100%;
+    animation: rotateY 0.8s forwards
+
+}
+
+.btn-container button.O::before {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    width: 80%;
+    height: 80%;
+    top: 5%;
+    left: 5%;
+    border: 6px solid black;
+    border-radius: 50%;
+}
+
+@keyframes rotateY {
+    100% {
+        transform: rotateY(180deg);
+    }
+}
+
+
+
+/* .btn-container button:focus {
+    animation: button 0.4s;
+} */
+
+.btn-container button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+.btn-container button.winner {
+    background-color: green;
+    color: #fff;
+}
+
+.btn-container button.loser {
+    background-color: red;
+    color: #fff;
+}
+
+@media(max-width: 500px) {
+    .btn-container {
+        height: 80px;
+        width: 80px;
+        font-size: 2.5rem;
+    }
+}

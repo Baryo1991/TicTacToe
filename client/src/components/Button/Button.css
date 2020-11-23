@@ -1,0 +1,47 @@
+.custom-button {
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    border-radius: 5px;    
+    font-weight: 500;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+    cursor: pointer;
+    width: 60%;
+    max-width: 200px;
+}
+
+.custom-button:hover {
+    box-shadow: 1px 2px 5px 5px black;
+    opacity: 0.7;
+}
+
+.custom-button.success {
+    color: #fff;
+    background-color: rgb(27, 109, 27);
+}
+
+.custom-button.danger {
+    color: #fff;
+    background-color: rgb(151, 31, 17);
+}
+
+.custom-button.info {
+    color: #fff;
+    background-color: rgb(41, 87, 172);
+}
+
+.custom-button.light {
+    color: black;
+    background-color: #fff;
+}
+.custom-button.light:hover {
+    color: #fff;
+    background-color: black;
+}
+.custom-button:disabled{
+    background-color: gray;
+    cursor: not-allowed;
+    opacity: 1;
+}
+

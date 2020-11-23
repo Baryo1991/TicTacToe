@@ -1,0 +1,78 @@
+.home-screen {
+    padding: 15px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.home-screen h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: rgb(45, 255, 45);
+}
+
+
+.home-screen .form-container {
+    box-shadow: 1px 1px 4px 5px #2d2d22;
+    text-align: center;
+    width: 450px;
+}
+
+.home-screen .form-container form {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.home-screen .form-container .input-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Input */
+.home-screen  .form-container .input-wrapper input {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: inherit;
+    position: relative;
+}
+
+.home-screen  .form-container .input-wrapper input:focus::placeholder {
+    transition: all 0.8s;
+    transform: translateY(-50px);
+}
+
+.home-screen  .form-container .input-wrapper input::placeholder {
+    color: #666;
+}
+
+/* Select */
+
+.home-screen .form-container .input-wrapper select{
+    border: none;
+    border-radius: 5px;
+    width: 40%;
+}
+
+@media(max-width:500px) {
+    .home-screen h1 {
+        font-size: 1.6rem;
+    }
+    .home-screen .form-container {
+        width: 300px;
+    }
+
+    .home-screen .form-container .input-wrapper {
+        justify-content: space-between;
+        font-size: 0.8rem;
+    }
+
+    .home-screen  .form-container .input-wrapper input {
+        width: 60%;
+    }
+}
